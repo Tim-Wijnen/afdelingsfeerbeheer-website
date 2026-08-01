@@ -90,7 +90,7 @@ h1 .welcome {
   --yaw: -2.5deg;
   --depth: 1rem;
   animation:
-    balloon-3d var(--duration) cubic-bezier(0.42, 0, 0.58, 1) var(--delay) infinite alternate,
+    balloon-3d calc(var(--duration) * 2) cubic-bezier(0.42, 0, 0.58, 1) var(--delay) infinite alternate,
     balloon-light var(--sway-duration) cubic-bezier(0.37, 0, 0.63, 1) var(--sway-delay) infinite alternate;
 }
 
@@ -166,7 +166,7 @@ h1 .welcome {
 @keyframes balloon-3d {
   0% {
     transform:
-      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * -0.45), var(--base-y, 0rem), calc(var(--depth) * -0.45))
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * -0.225), var(--base-y, 0rem), calc(var(--depth) * -0.45))
       rotateX(calc(var(--pitch) * -0.55))
       rotateY(calc(var(--yaw) * 0.35))
       rotateZ(calc(var(--tilt) * -0.6));
@@ -174,7 +174,7 @@ h1 .welcome {
 
   34% {
     transform:
-      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * 0.25), calc(var(--base-y, 0rem) + var(--lift) * 0.35), calc(var(--depth) * 0.3))
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * 0.125), calc(var(--base-y, 0rem) + var(--lift) * 0.35), calc(var(--depth) * 0.3))
       rotateX(calc(var(--pitch) * 0.4))
       rotateY(calc(var(--yaw) * -0.5))
       rotateZ(calc(var(--tilt) * 0.35));
@@ -182,7 +182,7 @@ h1 .welcome {
 
   68% {
     transform:
-      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift)), calc(var(--base-y, 0rem) + var(--lift)), var(--depth))
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * 0.5), calc(var(--base-y, 0rem) + var(--lift)), var(--depth))
       rotateX(var(--pitch))
       rotateY(var(--yaw))
       rotateZ(var(--tilt));
@@ -190,7 +190,7 @@ h1 .welcome {
 
   100% {
     transform:
-      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * -0.2), calc(var(--base-y, 0rem) + var(--lift) * 0.18), calc(var(--depth) * -0.15))
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * -0.1), calc(var(--base-y, 0rem) + var(--lift) * 0.18), calc(var(--depth) * -0.15))
       rotateX(calc(var(--pitch) * -0.25))
       rotateY(calc(var(--yaw) * 0.2))
       rotateZ(calc(var(--tilt) * -0.22));
