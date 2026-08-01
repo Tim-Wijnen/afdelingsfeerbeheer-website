@@ -10,7 +10,7 @@
   const confirmButton = document.querySelector("#confirm-button");
   const cacheKey = `birthday-gift:${config.publicToken}`;
   const previewMode = location.protocol === "file:" || new URLSearchParams(location.search).get("preview") === "1" || config.publicToken.startsWith("VUL-");
-  const progressByScreen = { loading: 5, welcome: 12, reveal: 28, condition: 44, selecting: 64, confirming: 80, submitting: 90, confirmed: 100, "no-dates": 64, error: 5 };
+  const progressByScreen = { loading: 5, welcome: 12, condition: 44, selecting: 64, confirming: 80, submitting: 90, confirmed: 100, "no-dates": 64, error: 5 };
   let gift = null;
   let selectedDateId = null;
   let submitting = false;
@@ -226,8 +226,7 @@
   document.addEventListener("click", (event) => {
     const action = event.target.closest("[data-action]")?.dataset.action;
     if (!action) return;
-    if (action === "reveal") showScreen("reveal");
-    if (action === "condition") showScreen("condition");
+    if (action === "reveal") showScreen("condition");
     if (action === "select") showScreen(gift?.dates?.length ? "selecting" : "no-dates");
     if (action === "change") showScreen("selecting");
     if (action === "confirm") confirmChoice();
@@ -237,12 +236,6 @@
 
   document.querySelectorAll("[data-sons]").forEach((node) => { node.textContent = config.sonsLabel; });
   document.querySelector("#preview-notice").hidden = !previewMode;
-  if (config.familyPhotoUrl) {
-    const image = document.querySelector("#family-photo");
-    image.src = config.familyPhotoUrl;
-    image.alt = config.familyPhotoAlt;
-    document.querySelector("#family-photo-wrap").hidden = false;
-  }
   resetPreviewState();
   loadGift();
 }());
