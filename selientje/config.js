@@ -10,8 +10,14 @@ window.GIFT_CONFIG = Object.freeze({
   dinnerDurationHours: 3,
   dinnerLocation: "Locatie volgt",
   previewDates: [
-    { id: 9001, dateIso: "2026-09-04", labelOverride: null },
-    { id: 9002, dateIso: "2026-09-18", labelOverride: null },
-    { id: 9003, dateIso: "2026-10-02", labelOverride: null },
+    { id: 9001, dateIso: "2026-08-21", labelOverride: null },
+    { id: 9002, dateIso: "2026-08-28", labelOverride: null },
+    { id: 9003, dateIso: "2026-09-04", labelOverride: null },
+    { id: 9004, dateIso: "2026-09-18", labelOverride: null },
+    { id: 9005, dateIso: "2026-10-02", labelOverride: null },
+    { id: 9006, dateIso: "2026-10-09", labelOverride: null },
+    { id: 9007, dateIso: "2026-10-16", labelOverride: null },
+    { id: 9008, dateIso: "2026-10-23", labelOverride: null },
+    { id: 9009, dateIso: "2026-10-30", labelOverride: null },
   ],
 });
