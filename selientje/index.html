@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f5ead8">
+    <meta name="description" content="Een verjaardagscadeau van drie zoons voor hun moeder.">
+    <title>Een cadeau voor mam</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient--one" aria-hidden="true"></div>
+    <div class="ambient ambient--two" aria-hidden="true"></div>
+    <div class="bokeh bokeh--one" aria-hidden="true"></div>
+    <div class="bokeh bokeh--two" aria-hidden="true"></div>
+    <div class="confetti-field" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+
+    <main class="page-shell">
+      <article class="gift-card" aria-labelledby="screen-title">
+        <div class="gift-card__edge" aria-hidden="true"></div>
+        <p class="eyebrow">Voor onze allerliefste moeder</p>
+        <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+        <p id="preview-notice" class="preview-notice" hidden>Voorbeeldmodus — deze keuze blijft alleen in deze browser en wordt niet naar de zoons verstuurd.</p>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+
+        <section class="screen screen--active" data-screen="loading" aria-labelledby="loading-title">
+          <div class="loader" aria-hidden="true"></div>
+          <h1 id="loading-title" tabindex="-1">Even je cadeau klaarzetten…</h1>
+        </section>
+
+        <section class="screen" data-screen="welcome" aria-labelledby="welcome-title" hidden>
+          <div class="balloon-name" aria-hidden="true">
+            <img src="../letters/glyphs/upper-M.png" alt="" width="205" height="292">
+            <img src="../letters/glyphs/upper-A.png" alt="" width="223" height="292">
+            <img src="../letters/glyphs/upper-M.png" alt="" width="205" height="292">
+          </div>
+          <h1 id="welcome-title" tabindex="-1">Gefeliciteerd <span data-recipient>mam</span>!</h1>
+          <p class="lead"><span data-sons>Je drie zoons</span> hebben iets voor je.</p>
+          <button class="button button--primary" type="button" data-action="reveal">Open je cadeau</button>
+        </section>
+
+        <section class="screen" data-screen="reveal" aria-labelledby="reveal-title" hidden>
+          <p class="ornament" aria-hidden="true">✦</p>
+          <h1 id="reveal-title" tabindex="-1">Een avond uit</h1>
+          <p class="lead">Je krijgt van ons een gezellig etentje. Met z’n vieren, alle tijd voor elkaar.</p>
+          <figure id="family-photo-wrap" class="family-photo" hidden>
+            <img id="family-photo" alt="">
+          </figure>
+          <button class="button button--primary" type="button" data-action="condition">Vertel verder</button>
+        </section>
+
+        <section class="screen" data-screen="condition" aria-labelledby="condition-title" hidden>
+          <p class="kicker">Er is één belangrijke voorwaarde…</p>
+          <h1 id="condition-title" tabindex="-1">We kiezen vanavond direct een datum.</h1>
+          <p class="lead">Wij hebben onze agenda’s al naast elkaar gelegd. Geen “dat doen we binnenkort” — vanavond zetten we het vast.</p>
+          <button class="button button--primary" type="button" data-action="select">Laat de avonden zien</button>
+        </section>
+
+        <section class="screen" data-screen="selecting" aria-labelledby="select-title" hidden>
+          <h1 id="select-title" tabindex="-1">Kies jouw vrijdagavond</h1>
+          <p class="intro">Alle onderstaande avonden hebben wij alvast vrijgehouden.</p>
+          <form id="date-form">
+            <fieldset>
+              <legend class="visually-hidden">Beschikbare vrijdagavonden</legend>
+              <div id="date-options" class="date-options"></div>
+            </fieldset>
+            <button id="choose-button" class="button button--primary" type="submit" disabled>Deze avond kies ik</button>
+          </form>
+        </section>
+
+        <section class="screen" data-screen="no-dates" aria-labelledby="no-dates-title" hidden>
+          <p class="ornament" aria-hidden="true">✦</p>
+          <h1 id="no-dates-title" tabindex="-1">We moeten even nieuwe avonden prikken</h1>
+          <p class="lead">De klaargezette vrijdagen zijn voorbij. Vraag één van ons om nieuwe datums toe te voegen.</p>
+          <button class="button button--secondary" type="button" data-action="retry">Opnieuw proberen</button>
+        </section>
+
+        <section class="screen" data-screen="confirming" aria-labelledby="confirm-title" hidden>
+          <p class="kicker">Laatste controle</p>
+          <h1 id="confirm-title" tabindex="-1">Wil je deze vrijdag definitief kiezen?</h1>
+          <p id="confirm-date" class="chosen-date"></p>
+          <p class="small-copy">Na bevestigen staat de datum vast. Alleen één van de zoons kan de keuze daarna resetten.</p>
+          <div class="button-group">
+            <button id="confirm-button" class="button button--primary" type="button" data-action="confirm">Ja, deze wordt het</button>
+            <button class="button button--secondary" type="button" data-action="change">Toch een andere datum</button>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="submitting" aria-labelledby="submitting-title" hidden>
+          <div class="loader" aria-hidden="true"></div>
+          <h1 id="submitting-title" tabindex="-1">We zetten de datum vast…</h1>
+          <p class="lead">Sluit deze pagina nog heel even niet.</p>
+        </section>
+
+        <section class="screen" data-screen="confirmed" aria-labelledby="confirmed-title" hidden>
+          <div class="activation-stamp" aria-hidden="true">Geactiveerd</div>
+          <p class="ornament" aria-hidden="true">✦</p>
+          <h1 id="confirmed-title" tabindex="-1">Het staat vast!</h1>
+          <p id="final-date" class="chosen-date"></p>
+          <p class="lead">Dan gaan we met z’n vieren uit eten. Je verjaardagscadeau is officieel geactiveerd.</p>
+          <p id="notification-warning" class="notice" hidden>Je datum is veilig opgeslagen, maar onze automatische melding lukte nog niet. Deel hem voor de zekerheid hieronder.</p>
+          <div class="button-group button-group--compact">
+            <button class="button button--primary" type="button" data-action="calendar">Zet in agenda</button>
+            <a id="whatsapp-link" class="button button--secondary" href="#" target="_blank" rel="noopener" hidden>Deel via WhatsApp</a>
+          </div>
+          <p class="small-copy">Wil je toch wijzigen? Neem dan contact op met één van ons.</p>
+        </section>
+
+        <section class="screen" data-screen="error" aria-labelledby="error-title" hidden>
+          <p class="ornament" aria-hidden="true">✦</p>
+          <h1 id="error-title" tabindex="-1">Dat ging nog niet helemaal goed</h1>
+          <p id="error-message" class="lead">We konden je cadeau niet laden.</p>
+          <button class="button button--primary" type="button" data-action="retry">Probeer opnieuw</button>
+        </section>
+      </article>
+    </main>
+
+    <noscript>
+      <div class="noscript">Voor dit interactieve cadeau is JavaScript nodig. Zet JavaScript aan of vraag één van je zoons om te helpen.</div>
+    </noscript>
+  </body>
+</html>
