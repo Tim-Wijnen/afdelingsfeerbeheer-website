@@ -187,23 +187,6 @@
     link.hidden = !forceShow && !number;
   }
 
-  function addToCalendar() {
-    if (!gift?.confirmedDate) return;
-    const date = gift.confirmedDate.dateIso.replaceAll("-", "");
-    const [hours, minutes] = config.dinnerTime.split(":");
-    const start = `${date}T${hours}${minutes}00`;
-    const endHour = String((Number(hours) + config.dinnerDurationHours) % 24).padStart(2, "0");
-    const end = `${date}T${endHour}${minutes}00`;
-    const escapeIcs = (value) => String(value).replace(/([,;\\])/g, "\\$1").replace(/\n/g, "\\n");
-    const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Verjaardagscadeau//NL", "CALSCALE:GREGORIAN", "BEGIN:VEVENT", `UID:${config.publicToken}@verjaardagscadeau`, `DTSTART;TZID=Europe/Amsterdam:${start}`, `DTEND;TZID=Europe/Amsterdam:${end}`, "SUMMARY:Etentje met z'n vieren", `LOCATION:${escapeIcs(config.dinnerLocation)}`, "DESCRIPTION:Het verjaardagscadeau is officieel geactiveerd!", "END:VEVENT", "END:VCALENDAR"].join("\r\n");
-    const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = "etentje-met-zijn-vieren.ics";
-    anchor.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-  }
-
   function launchConfetti() {
     const canvas = document.querySelector("#confetti");
     const context = canvas.getContext("2d");
@@ -229,7 +212,6 @@
     if (action === "change") showScreen("selecting");
     if (action === "confirm") confirmChoice();
     if (action === "retry") loadGift();
-    if (action === "calendar") addToCalendar();
   });
 
   document.querySelectorAll("[data-sons]").forEach((node) => { node.textContent = config.sonsLabel; });
