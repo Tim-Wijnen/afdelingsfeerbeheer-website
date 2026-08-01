@@ -62,7 +62,7 @@ h1 .welcome {
 .balloon-wordmark {
   --kern-step: clamp(-0.2rem, -0.22vw, -0.04rem);
   display: grid;
-  grid-template-columns: 232fr 149fr 183fr 137fr 89fr 76fr 144fr 189fr 221fr 149fr 137fr 137fr 188fr 177fr 137fr 171fr 137fr 137fr 188fr 80fr 144fr 89fr;
+  grid-template-columns: 223fr 157fr 174fr 152fr 79fr 81fr 166fr 150fr 144fr 157fr 152fr 152fr 134fr 160fr 152fr 163fr 152fr 152fr 134fr 107fr 166fr 79fr;
   align-items: center;
   width: 93%;
   margin-inline: auto;

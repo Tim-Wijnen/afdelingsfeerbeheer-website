@@ -1,0 +1,1207 @@
+{
+  "height": 292,
+  "groups": {
+    "uppercase": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "lowercase": "abcdefghijklmnopqrstuvwxyz",
+    "digits-basic": "0123456789!?.,:;@#&%",
+    "symbols": "+-=/\\()[]*{}_|°€$£\"'"
+  },
+  "glyphs": [
+    {
+      "char": "A",
+      "file": "glyphs/upper-A.png",
+      "width": 223,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 38,
+        "y": 0,
+        "width": 223,
+        "height": 292
+      }
+    },
+    {
+      "char": "B",
+      "file": "glyphs/upper-B.png",
+      "width": 172,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 362,
+        "y": 0,
+        "width": 172,
+        "height": 292
+      }
+    },
+    {
+      "char": "C",
+      "file": "glyphs/upper-C.png",
+      "width": 182,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 656,
+        "y": 0,
+        "width": 182,
+        "height": 292
+      }
+    },
+    {
+      "char": "D",
+      "file": "glyphs/upper-D.png",
+      "width": 187,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 953,
+        "y": 0,
+        "width": 187,
+        "height": 292
+      }
+    },
+    {
+      "char": "E",
+      "file": "glyphs/upper-E.png",
+      "width": 160,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1265,
+        "y": 0,
+        "width": 160,
+        "height": 292
+      }
+    },
+    {
+      "char": "F",
+      "file": "glyphs/upper-F.png",
+      "width": 165,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1562,
+        "y": 0,
+        "width": 165,
+        "height": 292
+      }
+    },
+    {
+      "char": "G",
+      "file": "glyphs/upper-G.png",
+      "width": 187,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1850,
+        "y": 0,
+        "width": 187,
+        "height": 292
+      }
+    },
+    {
+      "char": "H",
+      "file": "glyphs/upper-H.png",
+      "width": 179,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2153,
+        "y": 0,
+        "width": 179,
+        "height": 292
+      }
+    },
+    {
+      "char": "I",
+      "file": "glyphs/upper-I.png",
+      "width": 82,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2500,
+        "y": 0,
+        "width": 82,
+        "height": 292
+      }
+    },
+    {
+      "char": "J",
+      "file": "glyphs/upper-J.png",
+      "width": 162,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2759,
+        "y": 0,
+        "width": 162,
+        "height": 292
+      }
+    },
+    {
+      "char": "K",
+      "file": "glyphs/upper-K.png",
+      "width": 179,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3050,
+        "y": 0,
+        "width": 179,
+        "height": 292
+      }
+    },
+    {
+      "char": "L",
+      "file": "glyphs/upper-L.png",
+      "width": 153,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3362,
+        "y": 0,
+        "width": 153,
+        "height": 292
+      }
+    },
+    {
+      "char": "M",
+      "file": "glyphs/upper-M.png",
+      "width": 217,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 41,
+        "y": 292,
+        "width": 217,
+        "height": 292
+      }
+    },
+    {
+      "char": "N",
+      "file": "glyphs/upper-N.png",
+      "width": 199,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 349,
+        "y": 292,
+        "width": 199,
+        "height": 292
+      }
+    },
+    {
+      "char": "O",
+      "file": "glyphs/upper-O.png",
+      "width": 210,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 642,
+        "y": 292,
+        "width": 210,
+        "height": 292
+      }
+    },
+    {
+      "char": "P",
+      "file": "glyphs/upper-P.png",
+      "width": 176,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 958,
+        "y": 292,
+        "width": 176,
+        "height": 292
+      }
+    },
+    {
+      "char": "Q",
+      "file": "glyphs/upper-Q.png",
+      "width": 212,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1239,
+        "y": 292,
+        "width": 212,
+        "height": 292
+      }
+    },
+    {
+      "char": "R",
+      "file": "glyphs/upper-R.png",
+      "width": 173,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1558,
+        "y": 292,
+        "width": 173,
+        "height": 292
+      }
+    },
+    {
+      "char": "S",
+      "file": "glyphs/upper-S.png",
+      "width": 167,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1860,
+        "y": 292,
+        "width": 167,
+        "height": 292
+      }
+    },
+    {
+      "char": "T",
+      "file": "glyphs/upper-T.png",
+      "width": 198,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2143,
+        "y": 292,
+        "width": 198,
+        "height": 292
+      }
+    },
+    {
+      "char": "U",
+      "file": "glyphs/upper-U.png",
+      "width": 191,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2446,
+        "y": 292,
+        "width": 191,
+        "height": 292
+      }
+    },
+    {
+      "char": "V",
+      "file": "glyphs/upper-V.png",
+      "width": 202,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2739,
+        "y": 292,
+        "width": 202,
+        "height": 292
+      }
+    },
+    {
+      "char": "W",
+      "file": "glyphs/upper-W.png",
+      "width": 258,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3010,
+        "y": 292,
+        "width": 258,
+        "height": 292
+      }
+    },
+    {
+      "char": "X",
+      "file": "glyphs/upper-X.png",
+      "width": 182,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3347,
+        "y": 292,
+        "width": 182,
+        "height": 292
+      }
+    },
+    {
+      "char": "Y",
+      "file": "glyphs/upper-Y.png",
+      "width": 182,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 58,
+        "y": 584,
+        "width": 182,
+        "height": 292
+      }
+    },
+    {
+      "char": "Z",
+      "file": "glyphs/upper-Z.png",
+      "width": 170,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 363,
+        "y": 584,
+        "width": 170,
+        "height": 292
+      }
+    },
+    {
+      "char": "a",
+      "file": "glyphs/lower-a.png",
+      "width": 170,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 662,
+        "y": 584,
+        "width": 170,
+        "height": 292
+      }
+    },
+    {
+      "char": "b",
+      "file": "glyphs/lower-b.png",
+      "width": 160,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 966,
+        "y": 584,
+        "width": 160,
+        "height": 292
+      }
+    },
+    {
+      "char": "c",
+      "file": "glyphs/lower-c.png",
+      "width": 150,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1270,
+        "y": 584,
+        "width": 150,
+        "height": 292
+      }
+    },
+    {
+      "char": "d",
+      "file": "glyphs/lower-d.png",
+      "width": 174,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1557,
+        "y": 584,
+        "width": 174,
+        "height": 292
+      }
+    },
+    {
+      "char": "e",
+      "file": "glyphs/lower-e.png",
+      "width": 152,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1867,
+        "y": 584,
+        "width": 152,
+        "height": 292
+      }
+    },
+    {
+      "char": "f",
+      "file": "glyphs/lower-f.png",
+      "width": 157,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2164,
+        "y": 584,
+        "width": 157,
+        "height": 292
+      }
+    },
+    {
+      "char": "g",
+      "file": "glyphs/lower-g.png",
+      "width": 150,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2466,
+        "y": 584,
+        "width": 150,
+        "height": 292
+      }
+    },
+    {
+      "char": "h",
+      "file": "glyphs/lower-h.png",
+      "width": 163,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2759,
+        "y": 584,
+        "width": 163,
+        "height": 292
+      }
+    },
+    {
+      "char": "i",
+      "file": "glyphs/lower-i.png",
+      "width": 81,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3099,
+        "y": 584,
+        "width": 81,
+        "height": 292
+      }
+    },
+    {
+      "char": "j",
+      "file": "glyphs/lower-j.png",
+      "width": 137,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3370,
+        "y": 584,
+        "width": 137,
+        "height": 292
+      }
+    },
+    {
+      "char": "k",
+      "file": "glyphs/lower-k.png",
+      "width": 151,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 74,
+        "y": 876,
+        "width": 151,
+        "height": 292
+      }
+    },
+    {
+      "char": "l",
+      "file": "glyphs/lower-l.png",
+      "width": 79,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 409,
+        "y": 876,
+        "width": 79,
+        "height": 292
+      }
+    },
+    {
+      "char": "m",
+      "file": "glyphs/lower-m.png",
+      "width": 232,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 631,
+        "y": 876,
+        "width": 232,
+        "height": 292
+      }
+    },
+    {
+      "char": "n",
+      "file": "glyphs/lower-n.png",
+      "width": 166,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 963,
+        "y": 876,
+        "width": 166,
+        "height": 292
+      }
+    },
+    {
+      "char": "o",
+      "file": "glyphs/lower-o.png",
+      "width": 170,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1260,
+        "y": 876,
+        "width": 170,
+        "height": 292
+      }
+    },
+    {
+      "char": "p",
+      "file": "glyphs/lower-p.png",
+      "width": 163,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1563,
+        "y": 876,
+        "width": 163,
+        "height": 292
+      }
+    },
+    {
+      "char": "q",
+      "file": "glyphs/lower-q.png",
+      "width": 167,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1860,
+        "y": 876,
+        "width": 167,
+        "height": 292
+      }
+    },
+    {
+      "char": "r",
+      "file": "glyphs/lower-r.png",
+      "width": 134,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2175,
+        "y": 876,
+        "width": 134,
+        "height": 292
+      }
+    },
+    {
+      "char": "s",
+      "file": "glyphs/lower-s.png",
+      "width": 144,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2469,
+        "y": 876,
+        "width": 144,
+        "height": 292
+      }
+    },
+    {
+      "char": "t",
+      "file": "glyphs/lower-t.png",
+      "width": 151,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2765,
+        "y": 876,
+        "width": 151,
+        "height": 292
+      }
+    },
+    {
+      "char": "u",
+      "file": "glyphs/lower-u.png",
+      "width": 162,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3058,
+        "y": 876,
+        "width": 162,
+        "height": 292
+      }
+    },
+    {
+      "char": "v",
+      "file": "glyphs/lower-v.png",
+      "width": 165,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3356,
+        "y": 876,
+        "width": 165,
+        "height": 292
+      }
+    },
+    {
+      "char": "w",
+      "file": "glyphs/lower-w.png",
+      "width": 212,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 43,
+        "y": 1168,
+        "width": 212,
+        "height": 292
+      }
+    },
+    {
+      "char": "x",
+      "file": "glyphs/lower-x.png",
+      "width": 163,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 367,
+        "y": 1168,
+        "width": 163,
+        "height": 292
+      }
+    },
+    {
+      "char": "y",
+      "file": "glyphs/lower-y.png",
+      "width": 153,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 671,
+        "y": 1168,
+        "width": 153,
+        "height": 292
+      }
+    },
+    {
+      "char": "z",
+      "file": "glyphs/lower-z.png",
+      "width": 158,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 967,
+        "y": 1168,
+        "width": 158,
+        "height": 292
+      }
+    },
+    {
+      "char": "0",
+      "file": "glyphs/digit-0.png",
+      "width": 187,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1252,
+        "y": 1168,
+        "width": 187,
+        "height": 292
+      }
+    },
+    {
+      "char": "1",
+      "file": "glyphs/digit-1.png",
+      "width": 127,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1581,
+        "y": 1168,
+        "width": 127,
+        "height": 292
+      }
+    },
+    {
+      "char": "2",
+      "file": "glyphs/digit-2.png",
+      "width": 181,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1853,
+        "y": 1168,
+        "width": 181,
+        "height": 292
+      }
+    },
+    {
+      "char": "3",
+      "file": "glyphs/digit-3.png",
+      "width": 167,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2159,
+        "y": 1168,
+        "width": 167,
+        "height": 292
+      }
+    },
+    {
+      "char": "4",
+      "file": "glyphs/digit-4.png",
+      "width": 199,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2442,
+        "y": 1168,
+        "width": 199,
+        "height": 292
+      }
+    },
+    {
+      "char": "5",
+      "file": "glyphs/digit-5.png",
+      "width": 176,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2752,
+        "y": 1168,
+        "width": 176,
+        "height": 292
+      }
+    },
+    {
+      "char": "6",
+      "file": "glyphs/digit-6.png",
+      "width": 184,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3047,
+        "y": 1168,
+        "width": 184,
+        "height": 292
+      }
+    },
+    {
+      "char": "7",
+      "file": "glyphs/digit-7.png",
+      "width": 185,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3346,
+        "y": 1168,
+        "width": 185,
+        "height": 292
+      }
+    },
+    {
+      "char": "8",
+      "file": "glyphs/digit-8.png",
+      "width": 184,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 57,
+        "y": 1460,
+        "width": 184,
+        "height": 292
+      }
+    },
+    {
+      "char": "9",
+      "file": "glyphs/digit-9.png",
+      "width": 186,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 355,
+        "y": 1460,
+        "width": 186,
+        "height": 292
+      }
+    },
+    {
+      "char": "!",
+      "file": "glyphs/exclamation.png",
+      "width": 103,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 696,
+        "y": 1460,
+        "width": 103,
+        "height": 292
+      }
+    },
+    {
+      "char": "?",
+      "file": "glyphs/question.png",
+      "width": 175,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 959,
+        "y": 1460,
+        "width": 175,
+        "height": 292
+      }
+    },
+    {
+      "char": ".",
+      "file": "glyphs/period.png",
+      "width": 107,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1292,
+        "y": 1460,
+        "width": 107,
+        "height": 292
+      }
+    },
+    {
+      "char": ",",
+      "file": "glyphs/comma.png",
+      "width": 105,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1592,
+        "y": 1460,
+        "width": 105,
+        "height": 292
+      }
+    },
+    {
+      "char": ":",
+      "file": "glyphs/colon.png",
+      "width": 107,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1890,
+        "y": 1460,
+        "width": 107,
+        "height": 292
+      }
+    },
+    {
+      "char": ";",
+      "file": "glyphs/semicolon.png",
+      "width": 90,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2197,
+        "y": 1460,
+        "width": 90,
+        "height": 292
+      }
+    },
+    {
+      "char": "@",
+      "file": "glyphs/at.png",
+      "width": 209,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2437,
+        "y": 1460,
+        "width": 209,
+        "height": 292
+      }
+    },
+    {
+      "char": "#",
+      "file": "glyphs/hash.png",
+      "width": 218,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2731,
+        "y": 1460,
+        "width": 218,
+        "height": 292
+      }
+    },
+    {
+      "char": "&",
+      "file": "glyphs/ampersand.png",
+      "width": 275,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3002,
+        "y": 1460,
+        "width": 275,
+        "height": 292
+      }
+    },
+    {
+      "char": "%",
+      "file": "glyphs/percent.png",
+      "width": 216,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3330,
+        "y": 1460,
+        "width": 216,
+        "height": 292
+      }
+    },
+    {
+      "char": "+",
+      "file": "glyphs/plus.png",
+      "width": 213,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 43,
+        "y": 1752,
+        "width": 213,
+        "height": 292
+      }
+    },
+    {
+      "char": "-",
+      "file": "glyphs/hyphen.png",
+      "width": 162,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 367,
+        "y": 1752,
+        "width": 162,
+        "height": 292
+      }
+    },
+    {
+      "char": "=",
+      "file": "glyphs/equals.png",
+      "width": 183,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 656,
+        "y": 1752,
+        "width": 183,
+        "height": 292
+      }
+    },
+    {
+      "char": "/",
+      "file": "glyphs/slash.png",
+      "width": 143,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 975,
+        "y": 1752,
+        "width": 143,
+        "height": 292
+      }
+    },
+    {
+      "char": "\\",
+      "file": "glyphs/backslash.png",
+      "width": 146,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1272,
+        "y": 1752,
+        "width": 146,
+        "height": 292
+      }
+    },
+    {
+      "char": "(",
+      "file": "glyphs/paren-left.png",
+      "width": 104,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1592,
+        "y": 1752,
+        "width": 104,
+        "height": 292
+      }
+    },
+    {
+      "char": ")",
+      "file": "glyphs/paren-right.png",
+      "width": 103,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1892,
+        "y": 1752,
+        "width": 103,
+        "height": 292
+      }
+    },
+    {
+      "char": "[",
+      "file": "glyphs/bracket-left.png",
+      "width": 123,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2181,
+        "y": 1752,
+        "width": 123,
+        "height": 292
+      }
+    },
+    {
+      "char": "]",
+      "file": "glyphs/bracket-right.png",
+      "width": 125,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2479,
+        "y": 1752,
+        "width": 125,
+        "height": 292
+      }
+    },
+    {
+      "char": "*",
+      "file": "glyphs/asterisk.png",
+      "width": 209,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2736,
+        "y": 1752,
+        "width": 209,
+        "height": 292
+      }
+    },
+    {
+      "char": "{",
+      "file": "glyphs/brace-left.png",
+      "width": 116,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3081,
+        "y": 1752,
+        "width": 116,
+        "height": 292
+      }
+    },
+    {
+      "char": "}",
+      "file": "glyphs/brace-right.png",
+      "width": 114,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 3381,
+        "y": 1752,
+        "width": 114,
+        "height": 292
+      }
+    },
+    {
+      "char": "_",
+      "file": "glyphs/underscore.png",
+      "width": 203,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 48,
+        "y": 2044,
+        "width": 203,
+        "height": 292
+      }
+    },
+    {
+      "char": "|",
+      "file": "glyphs/pipe.png",
+      "width": 72,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 412,
+        "y": 2044,
+        "width": 72,
+        "height": 292
+      }
+    },
+    {
+      "char": "°",
+      "file": "glyphs/degree.png",
+      "width": 130,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 682,
+        "y": 2044,
+        "width": 130,
+        "height": 292
+      }
+    },
+    {
+      "char": "€",
+      "file": "glyphs/euro.png",
+      "width": 179,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 957,
+        "y": 2044,
+        "width": 179,
+        "height": 292
+      }
+    },
+    {
+      "char": "$",
+      "file": "glyphs/dollar.png",
+      "width": 153,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1269,
+        "y": 2044,
+        "width": 153,
+        "height": 292
+      }
+    },
+    {
+      "char": "£",
+      "file": "glyphs/pound.png",
+      "width": 156,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1566,
+        "y": 2044,
+        "width": 156,
+        "height": 292
+      }
+    },
+    {
+      "char": "\"",
+      "file": "glyphs/quote.png",
+      "width": 126,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 1880,
+        "y": 2044,
+        "width": 126,
+        "height": 292
+      }
+    },
+    {
+      "char": "'",
+      "file": "glyphs/apostrophe.png",
+      "width": 79,
+      "height": 292,
+      "source": "generated-from-live-reference",
+      "sprite": {
+        "x": 2203,
+        "y": 2044,
+        "width": 79,
+        "height": 292
+      }
+    }
+  ]
+}
