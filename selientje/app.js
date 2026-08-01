@@ -15,7 +15,7 @@
   let selectedDateId = null;
   let submitting = false;
 
-  const nlDate = new Intl.DateTimeFormat("nl-NL", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Amsterdam" });
+  const nlDate = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Amsterdam" });
 
   function formatDate(iso) {
     const text = nlDate.format(new Date(`${iso}T12:00:00Z`));
@@ -119,9 +119,7 @@
       const copy = document.createElement("div");
       const strong = document.createElement("strong");
       strong.textContent = date.labelOverride || formatDate(date.dateIso);
-      const sub = document.createElement("span");
-      sub.textContent = "Beschikbaar voor ons alle vier";
-      copy.append(strong, sub);
+      copy.append(strong);
       label.append(input, copy);
       return label;
     }));
