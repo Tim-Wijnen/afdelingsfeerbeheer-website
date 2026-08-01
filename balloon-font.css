@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Afdelingsfeer Balloons";
+  src:
+    url("fonts/afdelingsfeer-balloons.woff2") format("woff2"),
+    url("fonts/afdelingsfeer-balloons.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.balloon-font {
+  color: #d89a22;
+  font-family: "Afdelingsfeer Balloons", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+@supports (background-clip: text) {
+  .balloon-font {
+    background: linear-gradient(
+      105deg,
+      #9a5e0d 0%,
+      #ffd979 17%,
+      #fff4bd 29%,
+      #c77b12 43%,
+      #ffe899 58%,
+      #a9650d 74%,
+      #f7c75c 100%
+    );
+    background-clip: text;
+    color: transparent;
+    filter:
+      drop-shadow(0 0.025em 0 #8a520b)
+      drop-shadow(0 0.075em 0.08em rgb(118 73 17 / 24%));
+  }
+}
