@@ -29,7 +29,7 @@ main {
 }
 
 h1 {
-  width: min(100%, 74rem);
+  width: min(100%, 94rem);
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
@@ -60,9 +60,9 @@ h1 .welcome {
 }
 
 .balloon-wordmark {
-  --kern-step: clamp(-0.28rem, -0.35vw, -0.08rem);
+  --kern-step: clamp(-0.2rem, -0.22vw, -0.04rem);
   display: grid;
-  grid-template-columns: 238fr 76fr 114fr 144fr 137fr 142fr 80fr 147fr 137fr 193fr 77fr 89fr 154fr;
+  grid-template-columns: 232fr 149fr 183fr 137fr 89fr 76fr 144fr 189fr 221fr 149fr 137fr 137fr 188fr 177fr 137fr 171fr 137fr 137fr 188fr 80fr 144fr 89fr;
   align-items: center;
   width: 93%;
   margin-inline: auto;
@@ -79,6 +79,16 @@ h1 .welcome {
   transform-style: preserve-3d;
   backface-visibility: visible;
   will-change: transform, filter;
+  --duration: 12s;
+  --delay: -4s;
+  --lift: 0.25rem;
+  --drift: 0.15rem;
+  --tilt: 0.6deg;
+  --sway-duration: 8.5s;
+  --sway-delay: -3s;
+  --pitch: 2deg;
+  --yaw: -2.5deg;
+  --depth: 1rem;
   animation:
     balloon-3d var(--duration) cubic-bezier(0.42, 0, 0.58, 1) var(--delay) infinite alternate,
     balloon-light var(--sway-duration) cubic-bezier(0.37, 0, 0.63, 1) var(--sway-delay) infinite alternate;
@@ -97,6 +107,15 @@ h1 .welcome {
 .balloon-wordmark img:nth-child(11) { --duration: 12.4s; --delay: -7.9s; --lift: -0.36rem; --drift: 0.2rem;   --tilt: -0.74deg; --origin-x: 61%; }
 .balloon-wordmark img:nth-child(12) { --duration: 10.8s; --delay: -2.7s; --lift: 0.28rem;  --drift: -0.16rem; --tilt: 0.88deg;  --origin-x: 43%; }
 .balloon-wordmark img:nth-child(13) { --duration: 13.9s; --delay: -6.1s; --lift: -0.32rem; --drift: 0.22rem;  --tilt: -0.64deg; --origin-x: 56%; }
+.balloon-wordmark img:nth-child(14) { --duration: 11.2s; --delay: -8.2s; --lift: 0.29rem;  --drift: -0.18rem; --tilt: 0.76deg;  --origin-x: 46%; }
+.balloon-wordmark img:nth-child(15) { --duration: 14.4s; --delay: -3.7s; --lift: -0.33rem; --drift: 0.19rem;  --tilt: -0.69deg; --origin-x: 59%; }
+.balloon-wordmark img:nth-child(16) { --duration: 12.6s; --delay: -6.6s; --lift: 0.27rem;  --drift: 0.16rem;  --tilt: 0.83deg;  --origin-x: 41%; }
+.balloon-wordmark img:nth-child(17) { --duration: 10.7s; --delay: -1.9s; --lift: -0.28rem; --drift: -0.2rem;  --tilt: -0.73deg; --origin-x: 55%; }
+.balloon-wordmark img:nth-child(18) { --duration: 13.3s; --delay: -7.5s; --lift: 0.34rem;  --drift: 0.21rem;  --tilt: 0.58deg;  --origin-x: 48%; }
+.balloon-wordmark img:nth-child(19) { --duration: 11.9s; --delay: -4.5s; --lift: -0.24rem; --drift: -0.17rem; --tilt: -0.81deg; --origin-x: 62%; }
+.balloon-wordmark img:nth-child(20) { --duration: 14.1s; --delay: -9.3s; --lift: 0.31rem;  --drift: 0.14rem;  --tilt: 0.71deg;  --origin-x: 44%; }
+.balloon-wordmark img:nth-child(21) { --duration: 12.3s; --delay: -2.9s; --lift: -0.35rem; --drift: 0.2rem;   --tilt: -0.66deg; --origin-x: 57%; }
+.balloon-wordmark img:nth-child(22) { --duration: 10.9s; --delay: -5.4s; --lift: 0.26rem;  --drift: -0.15rem; --tilt: 0.87deg;  --origin-x: 43%; }
 
 .balloon-wordmark img:nth-child(1)  { --kern-n: 0;    --sway-duration: 8.9s;  --sway-delay: -3.2s; }
 .balloon-wordmark img:nth-child(2)  { --kern-n: 0.8;  --sway-duration: 7.4s;  --sway-delay: -5.8s; }
@@ -111,6 +130,15 @@ h1 .welcome {
 .balloon-wordmark img:nth-child(11) { --kern-n: 8.5;  --sway-duration: 8.3s;  --sway-delay: -5.9s; }
 .balloon-wordmark img:nth-child(12) { --kern-n: 9.2;  --sway-duration: 7.6s;  --sway-delay: -1.8s; }
 .balloon-wordmark img:nth-child(13) { --kern-n: 10.2; --sway-duration: 9.9s;  --sway-delay: -4.7s; }
+.balloon-wordmark img:nth-child(14) { --kern-n: 11;   --sway-duration: 7.7s;  --sway-delay: -6.2s; }
+.balloon-wordmark img:nth-child(15) { --kern-n: 11.8; --sway-duration: 10.1s; --sway-delay: -2.1s; }
+.balloon-wordmark img:nth-child(16) { --kern-n: 12.6; --sway-duration: 8.2s;  --sway-delay: -5.5s; }
+.balloon-wordmark img:nth-child(17) { --kern-n: 13.4; --sway-duration: 9.5s;  --sway-delay: -1.2s; }
+.balloon-wordmark img:nth-child(18) { --kern-n: 14.2; --sway-duration: 7.3s;  --sway-delay: -7.1s; }
+.balloon-wordmark img:nth-child(19) { --kern-n: 15;   --sway-duration: 10.4s; --sway-delay: -3.8s; }
+.balloon-wordmark img:nth-child(20) { --kern-n: 15.8; --sway-duration: 8.7s;  --sway-delay: -6.6s; }
+.balloon-wordmark img:nth-child(21) { --kern-n: 16.6; --sway-duration: 7.9s;  --sway-delay: -2.6s; }
+.balloon-wordmark img:nth-child(22) { --kern-n: 17.4; --sway-duration: 9.8s;  --sway-delay: -5.1s; }
 
 .balloon-wordmark img:nth-child(1)  { --pitch: 1.8deg;  --yaw: -2.4deg; --depth: 1.2rem; }
 .balloon-wordmark img:nth-child(2)  { --pitch: -2.6deg; --yaw: 3.2deg;  --depth: -0.8rem; }
@@ -125,6 +153,15 @@ h1 .welcome {
 .balloon-wordmark img:nth-child(11) { --pitch: 2.7deg;  --yaw: -3.3deg; --depth: 1.4rem; }
 .balloon-wordmark img:nth-child(12) { --pitch: -2.3deg; --yaw: 2.2deg;  --depth: -0.9rem; }
 .balloon-wordmark img:nth-child(13) { --pitch: 1.6deg;  --yaw: -3.5deg; --depth: 1.5rem; }
+.balloon-wordmark img:nth-child(14) { --pitch: -2.5deg; --yaw: 2.8deg;  --depth: -1rem; }
+.balloon-wordmark img:nth-child(15) { --pitch: 2.3deg;  --yaw: -3.1deg; --depth: 1.3rem; }
+.balloon-wordmark img:nth-child(16) { --pitch: -1.8deg; --yaw: 3.3deg;  --depth: 0.8rem; }
+.balloon-wordmark img:nth-child(17) { --pitch: 2.9deg;  --yaw: -2.6deg; --depth: -1.2rem; }
+.balloon-wordmark img:nth-child(18) { --pitch: -2.2deg; --yaw: 3.5deg;  --depth: 1.6rem; }
+.balloon-wordmark img:nth-child(19) { --pitch: 1.7deg;  --yaw: -3.4deg; --depth: -0.9rem; }
+.balloon-wordmark img:nth-child(20) { --pitch: -2.8deg; --yaw: 2.4deg;  --depth: 1.4rem; }
+.balloon-wordmark img:nth-child(21) { --pitch: 2.5deg;  --yaw: -2.9deg; --depth: 1.1rem; }
+.balloon-wordmark img:nth-child(22) { --pitch: -2deg;   --yaw: 3.2deg;  --depth: -0.8rem; }
 
 @keyframes balloon-3d {
   0% {
