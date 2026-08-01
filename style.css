@@ -1,0 +1,185 @@
+:root {
+  color-scheme: light;
+  --background: #fffaf9;
+  --text: #e91f4f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% 46%, #ffffff 0 24%, transparent 58%),
+    linear-gradient(145deg, #fff 0%, var(--background) 62%, #fff3f5 100%);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  width: min(100%, 74rem);
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1;
+}
+
+h1 .welcome {
+  display: block;
+  margin-bottom: clamp(0.6rem, 1.5vw, 1.2rem);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.25rem, 3vw, 2.25rem);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.balloon-wordmark {
+  --kern-step: clamp(-0.28rem, -0.35vw, -0.08rem);
+  display: grid;
+  grid-template-columns: 238fr 76fr 114fr 144fr 137fr 142fr 80fr 147fr 137fr 193fr 77fr 89fr 154fr;
+  align-items: center;
+  width: 93%;
+  margin-inline: auto;
+  perspective: 70rem;
+  perspective-origin: 50% 45%;
+  transform-style: preserve-3d;
+}
+
+.balloon-wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: var(--origin-x, 50%) 18%;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  will-change: transform, filter;
+  animation:
+    balloon-3d var(--duration) cubic-bezier(0.42, 0, 0.58, 1) var(--delay) infinite alternate,
+    balloon-light var(--sway-duration) cubic-bezier(0.37, 0, 0.63, 1) var(--sway-delay) infinite alternate;
+}
+
+.balloon-wordmark img:nth-child(1)  { --duration: 12.8s; --delay: -4.1s; --lift: -0.34rem; --drift: 0.22rem;  --tilt: -0.72deg; --origin-x: 58%; }
+.balloon-wordmark img:nth-child(2)  { --duration: 10.9s; --delay: -7.3s; --lift: 0.24rem;  --drift: -0.18rem; --tilt: 0.9deg;   --origin-x: 44%; }
+.balloon-wordmark img:nth-child(3)  { --duration: 13.6s; --delay: -2.2s; --lift: -0.4rem;  --drift: 0.16rem;  --tilt: 0.62deg;  --origin-x: 55%; --base-y: 0.5rem; }
+.balloon-wordmark img:nth-child(4)  { --duration: 11.7s; --delay: -8.4s; --lift: 0.3rem;   --drift: 0.2rem;   --tilt: -0.78deg; --origin-x: 47%; }
+.balloon-wordmark img:nth-child(5)  { --duration: 14.2s; --delay: -5.7s; --lift: -0.26rem; --drift: -0.19rem; --tilt: 0.68deg;  --origin-x: 60%; }
+.balloon-wordmark img:nth-child(6)  { --duration: 12.1s; --delay: -1.3s; --lift: 0.36rem;  --drift: 0.15rem;  --tilt: 0.82deg;  --origin-x: 42%; }
+.balloon-wordmark img:nth-child(7)  { --duration: 10.6s; --delay: -6.8s; --lift: -0.22rem; --drift: -0.13rem; --tilt: -0.58deg; --origin-x: 54%; }
+.balloon-wordmark img:nth-child(8)  { --duration: 13.1s; --delay: -3.4s; --lift: 0.32rem;  --drift: 0.21rem;  --tilt: 0.72deg;  --origin-x: 45%; }
+.balloon-wordmark img:nth-child(9)  { --duration: 11.4s; --delay: -9.1s; --lift: -0.3rem;  --drift: -0.21rem; --tilt: -0.86deg; --origin-x: 57%; }
+.balloon-wordmark img:nth-child(10) { --duration: 14.6s; --delay: -4.8s; --lift: 0.26rem;  --drift: 0.17rem;  --tilt: 0.55deg;  --origin-x: 48%; }
+.balloon-wordmark img:nth-child(11) { --duration: 12.4s; --delay: -7.9s; --lift: -0.36rem; --drift: 0.2rem;   --tilt: -0.74deg; --origin-x: 61%; }
+.balloon-wordmark img:nth-child(12) { --duration: 10.8s; --delay: -2.7s; --lift: 0.28rem;  --drift: -0.16rem; --tilt: 0.88deg;  --origin-x: 43%; }
+.balloon-wordmark img:nth-child(13) { --duration: 13.9s; --delay: -6.1s; --lift: -0.32rem; --drift: 0.22rem;  --tilt: -0.64deg; --origin-x: 56%; }
+
+.balloon-wordmark img:nth-child(1)  { --kern-n: 0;    --sway-duration: 8.9s;  --sway-delay: -3.2s; }
+.balloon-wordmark img:nth-child(2)  { --kern-n: 0.8;  --sway-duration: 7.4s;  --sway-delay: -5.8s; }
+.balloon-wordmark img:nth-child(3)  { --kern-n: 2.1;  --sway-duration: 10.2s; --sway-delay: -1.7s; }
+.balloon-wordmark img:nth-child(4)  { --kern-n: 3;    --sway-duration: 8.1s;  --sway-delay: -6.4s; }
+.balloon-wordmark img:nth-child(5)  { --kern-n: 3.8;  --sway-duration: 9.7s;  --sway-delay: -4.1s; }
+.balloon-wordmark img:nth-child(6)  { --kern-n: 4.6;  --sway-duration: 7.8s;  --sway-delay: -0.9s; }
+.balloon-wordmark img:nth-child(7)  { --kern-n: 5.4;  --sway-duration: 9.2s;  --sway-delay: -5.2s; }
+.balloon-wordmark img:nth-child(8)  { --kern-n: 5.7;  --sway-duration: 8.6s;  --sway-delay: -2.4s; }
+.balloon-wordmark img:nth-child(9)  { --kern-n: 6.9;  --sway-duration: 7.2s;  --sway-delay: -6.9s; }
+.balloon-wordmark img:nth-child(10) { --kern-n: 7.7;  --sway-duration: 10.5s; --sway-delay: -3.5s; }
+.balloon-wordmark img:nth-child(11) { --kern-n: 8.5;  --sway-duration: 8.3s;  --sway-delay: -5.9s; }
+.balloon-wordmark img:nth-child(12) { --kern-n: 9.2;  --sway-duration: 7.6s;  --sway-delay: -1.8s; }
+.balloon-wordmark img:nth-child(13) { --kern-n: 10.2; --sway-duration: 9.9s;  --sway-delay: -4.7s; }
+
+.balloon-wordmark img:nth-child(1)  { --pitch: 1.8deg;  --yaw: -2.4deg; --depth: 1.2rem; }
+.balloon-wordmark img:nth-child(2)  { --pitch: -2.6deg; --yaw: 3.2deg;  --depth: -0.8rem; }
+.balloon-wordmark img:nth-child(3)  { --pitch: 2.2deg;  --yaw: 2.7deg;  --depth: 1.5rem; }
+.balloon-wordmark img:nth-child(4)  { --pitch: -1.7deg; --yaw: -3deg;   --depth: -1.1rem; }
+.balloon-wordmark img:nth-child(5)  { --pitch: 2.8deg;  --yaw: -2.2deg; --depth: 0.9rem; }
+.balloon-wordmark img:nth-child(6)  { --pitch: -2.1deg; --yaw: 3.4deg;  --depth: 1.3rem; }
+.balloon-wordmark img:nth-child(7)  { --pitch: 1.5deg;  --yaw: -3.6deg; --depth: -0.7rem; }
+.balloon-wordmark img:nth-child(8)  { --pitch: -2.9deg; --yaw: 2.5deg;  --depth: 1.6rem; }
+.balloon-wordmark img:nth-child(9)  { --pitch: 2.4deg;  --yaw: -2.8deg; --depth: -1rem; }
+.balloon-wordmark img:nth-child(10) { --pitch: -1.9deg; --yaw: 3.1deg;  --depth: 1.1rem; }
+.balloon-wordmark img:nth-child(11) { --pitch: 2.7deg;  --yaw: -3.3deg; --depth: 1.4rem; }
+.balloon-wordmark img:nth-child(12) { --pitch: -2.3deg; --yaw: 2.2deg;  --depth: -0.9rem; }
+.balloon-wordmark img:nth-child(13) { --pitch: 1.6deg;  --yaw: -3.5deg; --depth: 1.5rem; }
+
+@keyframes balloon-3d {
+  0% {
+    transform:
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * -0.45), var(--base-y, 0rem), calc(var(--depth) * -0.45))
+      rotateX(calc(var(--pitch) * -0.55))
+      rotateY(calc(var(--yaw) * 0.35))
+      rotateZ(calc(var(--tilt) * -0.6));
+  }
+
+  34% {
+    transform:
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * 0.25), calc(var(--base-y, 0rem) + var(--lift) * 0.35), calc(var(--depth) * 0.3))
+      rotateX(calc(var(--pitch) * 0.4))
+      rotateY(calc(var(--yaw) * -0.5))
+      rotateZ(calc(var(--tilt) * 0.35));
+  }
+
+  68% {
+    transform:
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift)), calc(var(--base-y, 0rem) + var(--lift)), var(--depth))
+      rotateX(var(--pitch))
+      rotateY(var(--yaw))
+      rotateZ(var(--tilt));
+  }
+
+  100% {
+    transform:
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--drift) * -0.2), calc(var(--base-y, 0rem) + var(--lift) * 0.18), calc(var(--depth) * -0.15))
+      rotateX(calc(var(--pitch) * -0.25))
+      rotateY(calc(var(--yaw) * 0.2))
+      rotateZ(calc(var(--tilt) * -0.22));
+  }
+}
+
+@keyframes balloon-light {
+  0% {
+    filter: brightness(0.98) saturate(1) drop-shadow(-0.08rem 0.55rem 0.6rem rgb(118 73 17 / 11%));
+  }
+
+  42% {
+    filter: brightness(1.055) saturate(1.04) drop-shadow(0.18rem 0.82rem 0.9rem rgb(118 73 17 / 15%));
+  }
+
+  73% {
+    filter: brightness(1.015) saturate(1.08) drop-shadow(-0.2rem 0.42rem 0.52rem rgb(118 73 17 / 10%));
+  }
+
+  100% {
+    filter: brightness(0.99) saturate(1.02) drop-shadow(0.1rem 0.66rem 0.72rem rgb(118 73 17 / 13%));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .balloon-wordmark img {
+    animation: none;
+  }
+}
