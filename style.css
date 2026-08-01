@@ -163,29 +163,27 @@ h1 .welcome {
 .balloon-wordmark img:nth-child(21) { --pitch: 2.5deg;  --yaw: -2.9deg; --depth: 1.1rem; }
 .balloon-wordmark img:nth-child(22) { --pitch: -2deg;   --yaw: 3.2deg;  --depth: -0.8rem; }
 
+.balloon-wordmark img:nth-child(n + 2) { --wordmark-shift-x: -0.14rem; }
+
 @keyframes balloon-3d {
   0% {
     transform:
-      translate3d(calc(var(--kern-step) * var(--kern-n)), var(--base-y, 0rem), 0)
-      rotateX(calc(var(--pitch) * -0.55));
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--wordmark-shift-x, 0rem)), var(--base-y, 0rem), 0);
   }
 
   34% {
     transform:
-      translate3d(calc(var(--kern-step) * var(--kern-n)), calc(var(--base-y, 0rem) + var(--lift) * 0.175), 0)
-      rotateX(calc(var(--pitch) * 0.4));
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--wordmark-shift-x, 0rem)), calc(var(--base-y, 0rem) + var(--lift) * 0.175), 0);
   }
 
   68% {
     transform:
-      translate3d(calc(var(--kern-step) * var(--kern-n)), calc(var(--base-y, 0rem) + var(--lift) * 0.5), 0)
-      rotateX(var(--pitch));
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--wordmark-shift-x, 0rem)), calc(var(--base-y, 0rem) + var(--lift) * 0.5), 0);
   }
 
   100% {
     transform:
-      translate3d(calc(var(--kern-step) * var(--kern-n)), calc(var(--base-y, 0rem) + var(--lift) * 0.09), 0)
-      rotateX(calc(var(--pitch) * -0.25));
+      translate3d(calc(var(--kern-step) * var(--kern-n) + var(--wordmark-shift-x, 0rem)), calc(var(--base-y, 0rem) + var(--lift) * 0.09), 0);
   }
 }
 
