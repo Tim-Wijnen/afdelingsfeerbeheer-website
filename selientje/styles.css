@@ -124,7 +124,7 @@ h1:focus { outline: none; }
 .small-copy { margin: 14px auto 24px; font-size: .91rem; }
 .ornament { margin: 0 0 16px; color: var(--color-gold-700); font-size: 1.5rem; }
 
-.balloon-name { display: flex; height: clamp(6.8rem, 22vw, 11.5rem); align-items: stretch; justify-content: center; margin: -24px auto 8px; perspective: 60rem; }
+.balloon-name { display: flex; height: clamp(4.5rem, 16vw, 8rem); align-items: stretch; justify-content: center; margin: -24px auto 8px; perspective: 60rem; }
 .balloon-name img { width: auto; height: 100%; filter: drop-shadow(0 16px 13px rgb(96 61 21 / 18%)); animation: balloon-float 8s ease-in-out infinite; transform-origin: 50% 80%; }
 .balloon-name img:nth-child(2) { animation-delay: -2.7s; }
 .balloon-name img:nth-child(3) { animation-delay: -5.1s; }
